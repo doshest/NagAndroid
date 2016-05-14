@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include 
+        android:layout_alignParentTop="true"
+        android:id="@+id/main_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/title_bar"
+        />
+    <RelativeLayout 
+        android:background="#80BCBCBC"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_title_bar"
+        android:id="@+id/emptyView"
+        android:visibility="gone"
+        >
+
+    <ImageView
+        android:id="@+id/empty_img"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emptystate_fail_image"
+        
+        />
+        <TextView 
+        android:layout_marginBottom="50dip"
+        android:textSize="14sp"
+        android:layout_above="@id/empty_img"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tranparent_bg"
+        android:text="您还没有添加任何房间\n点击右上角加好加入房间吐槽吧"
+        android:textColor="@color/title_bar_bg"
+        
+        />
+  
+</RelativeLayout>
+
+<com.dosh.swaplistview.SwipeMenuListView
+    android:layout_below="@id/main_title_bar"
+        android:id="@+id/room_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent" >
+    
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        >
+
+        <com.tencent.nag.qrcode.view.ViewFinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.tencent.nag.qrcode.view.ViewFinderView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" 
+                android:visibility="gone">
+
+                <SeekBar
+                    android:id="@+id/seekbar_zoom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                     />
+            </RelativeLayout>
+            
+                
+            
+			
+		
+        </LinearLayout>
+    </FrameLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rlQrCodeTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/title_bar_bg_helf"
+       >
+        <TextView 
+            android:id="@+id/lightTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:scaleType="center"
+            android:text="打开闪光灯" 
+            android:textColor="#FFFFFF"/>
+        
+     
+        <TextView 
+            android:id="@+id/tvQrCodeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="扫描房间" />
+         
+        
+       <!--  <FrameLayout 
+            android:layout_width="@dimen/titlebar_icon_width"
+            android:layout_height="@dimen/titlebar_icon_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_item_margin"
+            android:layout_centerVertical="true"> -->
+	        <TextView 
+	            android:id="@+id/tvQrCodeRight"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:scaleType="center" 
+	            android:textSize="16sp"
+	            android:layout_alignParentRight="true"
+	             android:layout_marginRight="6dp"
+	             android:layout_centerVertical="true"
+	            android:textColor="#FFFFFF"
+	            android:text="从相册选取"/>
+<!--         <ProgressBar
+	            android:id="@+id/pbUserInfoLoading"
+	            style="@style/weibo_progressbar"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="5dp"
+	            android:layout_centerVertical="true" /> -->
+	        <ImageView
+	            android:id="@+id/ivUserInfoLoading"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:scaleType="matrix" />
+        <!-- </FrameLayout> -->
+    </RelativeLayout>
+	 
+
+</FrameLayout>

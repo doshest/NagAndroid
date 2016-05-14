@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Nag</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Nag</string>
+	<string name="qrcode_tips_text_unique"> 将二维码/条形码放到框内，即可自动扫描 </string>
+	<string name="qrcode_tips_text"> 对准二维码到框内即可自动扫描 </string>
+	<string name="qr_loading">已扫描，正在读取...</string>
+
+</resources>

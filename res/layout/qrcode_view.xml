@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/scanFrame"
+        android:layout_width="@dimen/qrcode_frame_width"
+        android:layout_height="@dimen/qrcode_frame_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/qrcode_border" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" >
+
+            <ImageView
+                android:id="@+id/scanLine"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scanFrame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/qrcode_tips_margin_top"
+        android:background="@drawable/qrcode_tip_background"
+        android:maxWidth="240dp"
+        android:minWidth="210dp" >
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="220dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+</RelativeLayout>

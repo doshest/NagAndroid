@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_chat"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f7f8" >
+    <include 
+        android:id="@+id/chat_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/title_bar"
+        />
+       <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:layout_below="@id/chat_title_bar"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@anim/loading_anim"
+            android:id="@+id/loading_img"
+            android:visibility="gone"
+            
+            />
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <!-- 聊天输入框 -->
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/custom_facerelativelayout" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/chat_title_bar"
+        android:id="@+id/list_container"
+    >
+    
+
+    <com.tencent.nag.view.ExListView
+        android:id="@+id/listview"
+          
+        android:listSelector="@android:color/transparent" 
+        android:descendantFocusability="beforeDescendants"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:stackFromBottom="true" />
+</LinearLayout>
+</RelativeLayout>

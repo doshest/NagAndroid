@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//assets/emoji=UTF-8
+encoding//src/com/tencent/nag/ChatActivity.java=UTF-8
+encoding//src/com/tencent/nag/ChatEmoji.java=UTF-8
+encoding//src/com/tencent/nag/FaceRelativeLayout.java=UTF-8
+encoding//src/com/tencent/nag/ViewPagerAdapter.java=UTF-8
+encoding//src/com/tencent/nag/adapter/ChatMsgAdapter.java=UTF-8
+encoding//src/com/tencent/nag/adapter/FaceAdapter.java=UTF-8
+encoding//src/com/tencent/nag/qrcode/CaptureActivityHandler.java=UTF-8
+encoding//src/com/tencent/nag/qrcode/DecodeThread.java=UTF-8
+encoding//src/com/tencent/nag/utils/FaceConversionUtil.java=UTF-8
+encoding/<project>=UTF-8

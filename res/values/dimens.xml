@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<resources>
+		<dimen name="qrcode_scan_step">4dp</dimen>
+		<dimen name="qrcode_frame_width">218dp</dimen>
+		<dimen name="qrcode_frame_height">218dp</dimen>
+		<dimen name="qrcode_scanning_width">217dp</dimen>
+		<dimen name="qrcode_scanning_height">170dp</dimen>
+		<dimen name="qrcode_frame_border_width">4dp</dimen>
+		<dimen name="qrcode_flash_light_height">34dp</dimen>
+		<dimen name="qrcode_flash_light_margin_bottom">22dp</dimen>
+		<dimen name="qrcode_bottom_tab_height">80dp</dimen>
+		<dimen name="qrcode_tips_margin_top">16dp</dimen>
+		<dimen name="page_title_height">44dp</dimen>
+		<dimen name="page_title_textsize">16sp</dimen>
+	</resources>

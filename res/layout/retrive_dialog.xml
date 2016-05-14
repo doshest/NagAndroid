@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+            <Button 
+            android:layout_width="40dip"
+            android:id="@+id/msg_retrive"
+            android:layout_centerInParent="true"
+            android:layout_height="20dip"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="撤回"
+            android:background="@drawable/delete_btn_selector"
+            />
+
+</RelativeLayout>
